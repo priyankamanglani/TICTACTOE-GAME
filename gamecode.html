@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tic-Tac-Toe Game</title>
+    <style>
+        /* Center the title and the table */
+        body {
+            text-align: center;
+            background-color: #fff7e6; /* Light yellow background */
+        }
+
+        /* Style for the Tic-Tac-Toe table */
+        table {
+            width: 500px; /* Increase table width to 500px */
+            height: 500px; /* Increase table height to 500px */
+            margin: 0 auto; /* Center the table horizontally on the page */
+            border-collapse: collapse;
+            background-color: #fff; /* White table background */
+        }
+
+        td {
+            width: 100px; /* Increase cell width to 100px */
+            height: 100px; /* Increase cell height to 100px */
+            text-align: center;
+            font-size: 36px; /* Increase font size to 36px */
+            font-weight: bold;
+            border: 4px solid red; /* red border color */
+            cursor: pointer;
+            background-color: white; /* white cell background */
+        }
+    </style>
+</head>
+<body>
+    <h1>Tic-Tac-Toe</h1>
+    <table>
+        <tr>
+            <td id="cell0"></td>
+            <td id="cell1"></td>
+            <td id="cell2"></td>
+        </tr>
+        <tr>
+            <td id="cell3"></td>
+            <td id="cell4"></td>
+            <td id="cell5"></td>
+        </tr>
+        <tr>
+            <td id="cell6"></td>
+            <td id="cell7"></td>
+            <td id="cell8"></td>
+        </tr>
+    </table>
+    <p id="message">Player X's turn. Click a cell to make a move.</p>
+
+    <!-- The rest of your JavaScript code remains unchanged -->
+    <script>
+        var intArray = new Array(9).fill(0);
+        var currentPlayer = 1;
+        var gameOver = false;
+        var cells = document.querySelectorAll("td");
+        var message = document.getElementById("message");
+
+        // ... (The rest of your JavaScript code)
+    </script>
+</body>
+</html>
+
+
 
